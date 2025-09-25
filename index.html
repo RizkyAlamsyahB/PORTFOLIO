@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - iPortfolio Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+
+        <div class="profile-img">
+            <img src="assets/img/profil.png" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">Rizky Alamsyah</h1>
+        </a>
+
+       <!-- Social Links -->
+<div class="social-links text-center mt-2">
+  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="#" class="github"><i class="bi bi-github"></i></a>
+</div>
+
+<!-- Theme Toggle -->
+<div class="theme-switcher text-center mt-3">
+  <button id="theme-toggle" class="theme-toggle btn">
+    <i class="bi bi-moon"></i>
+  </button>
+</div>
+        <nav id="navmenu" class="navmenu">
+          
+            <ul>
+                <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+                <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+                <li><a href="#skills"><i class="bi bi-gear navicon"></i> Skills</a></li>
+                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+                <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+                <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+                <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<script>
+  const body = document.body;
+  const toggleBtn = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+
+  // init theme
+  if (currentTheme === 'light') {
+    body.classList.remove('dark-background');
+    body.classList.add('light-background');
+    toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+  } else {
+    body.classList.remove('light-background');
+    body.classList.add('dark-background');
+    toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+  }
+
+  // toggle on click
+  toggleBtn.addEventListener('click', () => {
+    if (body.classList.contains('dark-background')) {
+      body.classList.remove('dark-background');
+      body.classList.add('light-background');
+      localStorage.setItem('theme', 'light');
+      toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+    } else {
+      body.classList.remove('light-background');
+      body.classList.add('dark-background');
+      localStorage.setItem('theme', 'dark');
+      toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+    }
+  });
+</script>
+
+    <main class="main">
+
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+
+  <img src="assets/img/35e0d369-e78c-42ed-987e-98bb444f88f5.png" alt="" data-aos="fade-in" class="">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2>Rizky Alamsyah</h2>
+    <p>
+      I'm <span class="typed"
+        data-typed-items="Full Stack Web Developer, System Analyst, Project Manager">Full Stack Web Dev</span>
+      <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+    </p>
+
+<!-- Download CV Button -->
+    <a href="assets/cv-rizky-alamsyah.pdf" class="btn-download-cv" download>
+      <i class="bi bi-download"></i>
+      Download CV
+    </a>
+  </div>
+
+</section><!-- /Hero Section -->
+
+<style>
+/* Download CV Button Styles */
+.btn-download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: #ffffff;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-download-cv:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-download-cv:hover:before {
+    left: 100%;
+}
+
+.btn-download-cv:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-download-cv:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.btn-download-cv i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-download-cv:hover i {
+    transform: translateY(2px);
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-3px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+}
+
+/* Alternative Styles */
+
+/* Style 2: Outline Button */
+.btn-download-cv-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: #3498db;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-download-cv-outline:hover {
+    background: #3498db;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    text-decoration: none;
+}
+
+/* Style 3: Glassmorphism */
+.btn-download-cv-glass {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-download-cv-glass:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Style 4: Neumorphism */
+.btn-download-cv-neuro {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #2c2c2c;
+    color: #ffffff;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 
+        8px 8px 16px rgba(0, 0, 0, 0.3),
+        -8px -8px 16px rgba(255, 255, 255, 0.05);
+}
+
+.btn-download-cv-neuro:hover {
+    box-shadow: 
+        4px 4px 8px rgba(0, 0, 0, 0.3),
+        -4px -4px 8px rgba(255, 255, 255, 0.05),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Style 5: Animated Gradient */
+.btn-download-cv-gradient {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(-45deg, #3498db, #2980b9, #1abc9c, #16a085);
+    background-size: 400% 400%;
+    animation: gradientShift 3s ease infinite;
+    color: #ffffff;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn-download-cv-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn-download-cv,
+    .btn-download-cv-outline,
+    .btn-download-cv-glass,
+    .btn-download-cv-neuro,
+    .btn-download-cv-gradient {
+        padding: 12px 25px;
+        font-size: 14px;
+        gap: 8px;
+    }
+    
+    .btn-download-cv i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-download-cv,
+    .btn-download-cv-outline,
+    .btn-download-cv-glass,
+    .btn-download-cv-neuro,
+    .btn-download-cv-gradient {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+}
+</style>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>About</h2>
+                <p>Fresh graduate Sistem Informasi dengan minat pada Full Stack Web Development, System Analysis, dan
+                    Project Management. Terbiasa mengelola dan mengembangkan proyek digital end-to-end dengan pendekatan
+                    Agile dan Waterfall.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4">
+                        <img src="assets/img/profil.png" class="img-fluid" alt="Rizky Alamsyah Bimantara">
+                    </div>
+                    <div class="col-lg-8 content">
+                        <h2>Full Stack Web Developer &amp; System Analyst.</h2>
+                        <p class="fst-italic py-3">
+                            Berkomitmen menghadirkan solusi teknologi yang efisien, aman, dan user-friendly.
+                            Berpengalaman dalam menganalisis kebutuhan sistem, membangun aplikasi web, serta memimpin
+                            tim kecil.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Nama:</strong> <span>Rizky Alamsyah
+                                            Bimantara</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
+                                        <span>github.com/RizkyAlamsyahB</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62
+                                            878-4017-7803</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Kota:</strong> <span>Sidoarjo, Jawa
+                                            Timur</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Umur:</strong> <span>24</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Pendidikan:</strong> <span>S1
+                                            Sistem Informasi</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                        <span>rizkyalamsyah.dev@gmail.com</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong>
+                                        <span>Available</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="py-3">
+                            Memiliki pengalaman dalam mengembangkan berbagai aplikasi web mulai dari e-voting, sistem
+                            bengkel online, e-library, hingga e-commerce. Terampil dalam menggunakan teknologi modern
+                            seperti Laravel, Vue.js, dan berbagai API integration untuk menciptakan solusi digital yang
+                            komprehensif.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /About Section -->
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-code-slash"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p><strong>Major Projects</strong> <span>completed successfully</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-journal-richtext"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="19" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p><strong>Technologies</strong> <span>mastered and applied</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-headset"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="1000"
+                                data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Hours of Development</strong> <span>across various projects</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-award"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p><strong>Certifications</strong> <span>professional achievements</span></p>
+                        </div>
+                    </div><!-- End Stats Item -->
+                </div>
+            </div>
+        </section><!-- /Stats Section -->
+        <!-- Skills Section -->
+<section id="skills" class="skills section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Skills</h2>
+                <p>Keahlian teknis dan soft skills yang saya kuasai dalam pengembangan sistem informasi dan web
+                    development</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <!-- Tab Navigation -->
+                <div class="skills-tabs">
+                    <button class="tab-button active" data-tab="frontend">
+                        <i class="fas fa-laptop-code"></i>
+                        Frontend
+                    </button>
+                    <button class="tab-button" data-tab="backend">
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </button>
+                    <button class="tab-button" data-tab="database">
+                        <i class="fas fa-database"></i>
+                        Database
+                    </button>
+                    <button class="tab-button" data-tab="tools">
+                        <i class="fas fa-tools"></i>
+                        Tools
+                    </button>
+                    <button class="tab-button" data-tab="design">
+                        <i class="fas fa-palette"></i>
+                        Design
+                    </button>
+                    <button class="tab-button" data-tab="soft-skills">
+                        <i class="fas fa-users"></i>
+                        Soft Skills
+                    </button>
+                </div>
+
+                <!-- Tab Contents -->
+                <!-- Frontend Tab -->
+                <div class="tab-content active" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/JS.png" alt="JavaScript">
+                            </div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Vue.js.png" alt="Vue.js">
+                            </div>
+                            <div class="skill-name">Vue.js</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Bootstrap.png" alt="Bootstrap">
+                            </div>
+                            <div class="skill-name">Bootstrap</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Tailwind CSS.png" alt="Tailwind CSS">
+                            </div>
+                            <div class="skill-name">Tailwind CSS</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/CSS3.png" alt="CSS3">
+                            </div>
+                            <div class="skill-name">CSS3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Tab -->
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Laravel.png" alt="Laravel">
+                            </div>
+                            <div class="skill-name">Laravel</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/PHP.png" alt="PHP">
+                            </div>
+                            <div class="skill-name">PHP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Tab -->
+                <div class="tab-content" id="database">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/MySQL.png" alt="MySQL">
+                            </div>
+                            <div class="skill-name">MySQL</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/PostgresSQL.png" alt="PostgreSQL">
+                            </div>
+                            <div class="skill-name">PostgreSQL</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Tab -->
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Git.png" alt="Git">
+                            </div>
+                            <div class="skill-name">Git</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/GitHub.png" alt="GitHub" class="github-icon">
+                            </div>
+                            <div class="skill-name">GitHub</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Postman.png" alt="Postman">
+                            </div>
+                            <div class="skill-name">Postman</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Cloudflare.png" alt="Cloudflare">
+                            </div>
+                            <div class="skill-name">Cloudflare</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Ubuntu.png" alt="Ubuntu">
+                            </div>
+                            <div class="skill-name">Ubuntu</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/laragon.svg" alt="Laragon">
+                            </div>
+                            <div class="skill-name">Laragon</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Trello.png" alt="Trello">
+                            </div>
+                            <div class="skill-name">Trello</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Tab -->
+                <div class="tab-content" id="design">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/star-uml.jpeg" alt="StarUML">
+                            </div>
+                            <div class="skill-name">StarUML</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/drawio.png" alt="Draw.io">
+                            </div>
+                            <div class="skill-name">Draw.io</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Figma.png" alt="Figma">
+                            </div>
+                            <div class="skill-name">Figma</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills Tab -->
+                <div class="tab-content" id="soft-skills">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="skill-name">Project Management</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="skill-name">Team Collaboration</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="skill-name">Problem Solving</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="skill-name">Communication</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            // Tab functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const tabButtons = document.querySelectorAll('.tab-button');
+                const tabContents = document.querySelectorAll('.tab-content');
+
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const targetTab = button.getAttribute('data-tab');
+
+                        // Remove active class from all buttons and contents
+                        tabButtons.forEach(btn => btn.classList.remove('active'));
+                        tabContents.forEach(content => content.classList.remove('active'));
+
+                        // Add active class to clicked button and corresponding content
+                        button.classList.add('active');
+                        document.getElementById(targetTab).classList.add('active');
+                    });
+                });
+            });
+        </script>
+
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Resume</h2>
+                <p>Perjalanan pendidikan dan pengalaman profesional saya dalam bidang sistem informasi dan web
+                    development. Setiap langkah membentuk keahlian yang saya miliki saat ini.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="resume-title">Summary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Rizky Alamsyah Bimantara</h4>
+                            <p><em>Fresh graduate Sistem Informasi dengan pengalaman 2+ tahun dalam Full Stack Web
+                                    Development. Berpengalaman memimpin tim dan mengembangkan aplikasi web end-to-end
+                                    dari konsep hingga implementasi.</em></p>
+                            <ul>
+                                <li>Sidoarjo, Jawa Timur (61253)</li>
+                                <li>+62 878-4017-7803</li>
+                                <li>rizkyalamsyah.dev@gmail.com</li>
+                            </ul>
+                        </div><!-- End Resume Item -->
+
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>S1 Sistem Informasi</h4>
+                            <h5>2021 - 2023</h5>
+                            <p><em>Universitas Pembangunan Nasional Veteran Jawa Timur, Surabaya</em></p>
+                            <p>GPA: 3.73 - Fokus pada pengembangan sistem informasi, analisis sistem, dan manajemen
+                                proyek. Aktif dalam organisasi kemahasiswaan dan proyek-proyek pengembangan aplikasi.
+                            </p>
+                        </div><!-- End Resume Item -->
+
+                        <h3 class="resume-title">Certifications</h3>
+                        <div class="resume-item">
+                            <h4>BNSP – Junior Web Developer</h4>
+                            <h5>2024</h5>
+                            <p><em>Badan Nasional Sertifikasi Profesi</em></p>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Sertifikat Magang</h4>
+                            <h5>2024</h5>
+                            <p><em>Bawaslu Kota Surabaya</em></p>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Mahir Membuat Website dengan Laravel 9</h4>
+                            <h5>2023</h5>
+                            <p><em>Coding Studio</em></p>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Mahir Membuat Database Aplikasi Profesional</h4>
+                            <h5>2023</h5>
+                            <p><em>Coding Studio</em></p>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Belajar Prinsip Pemrograman SOLID</h4>
+                            <h5>2023</h5>
+                            <p><em>Dicoding</em></p>
+                        </div><!-- End Resume Item -->
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="resume-title">Project Experience</h3>
+
+                        <div class="resume-item">
+                            <h4>Full Stack Web Developer</h4>
+                            <h5>2025</h5>
+                            <p><em>E-Commerce Toko Olahraga (Freelance)</em></p>
+                            <ul>
+                                <li>Merancang & membangun e-commerce olahraga dengan integrasi Midtrans & Raja Ongkir
+                                </li>
+                                <li>Mengotomatisasi proses pembayaran & pengiriman berbasis API</li>
+                                <li>Implementasi sistem manajemen inventory dan laporan penjualan</li>
+                            </ul>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Full Stack Web Developer</h4>
+                            <h5>2025</h5>
+                            <p><em>Alena Soccer (Skripsi Project), Sidoarjo</em></p>
+                            <ul>
+                                <li>Mengembangkan sistem reservasi lapangan futsal berbasis web</li>
+                                <li>Mengintegrasikan QRIS Payment (Midtrans), membership, POS, dan laporan keuangan</li>
+                                <li>Menyelesaikan 113 skenario black-box testing dengan hasil sempurna</li>
+                            </ul>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Full Stack Web Developer & Team Lead</h4>
+                            <h5>2025</h5>
+                            <p><em>E-Library Bawaslu Surabaya</em></p>
+                            <ul>
+                                <li>Membangun website e-library internal terintegrasi dengan Owncloud</li>
+                                <li>Mengadopsi metodologi Agile Scrum untuk meningkatkan kolaborasi tim</li>
+                                <li>Meningkatkan efisiensi manajemen dokumen & transparansi kinerja</li>
+                            </ul>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Full Stack Web Developer (MSIB Batch 5)</h4>
+                            <h5>November 2023</h5>
+                            <p><em>Moto Fix (Bengkel Online), Surabaya</em></p>
+                            <ul>
+                                <li>Mendesain & membangun aplikasi bengkel online berbasis Laravel & MySQL</li>
+                                <li>Mengintegrasikan sistem pembayaran aman dengan Midtrans</li>
+                                <li>Mengembangkan fitur penjadwalan, manajemen suku cadang, dan monitoring</li>
+                            </ul>
+                        </div><!-- End Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Project Leader</h4>
+                            <h5>Juli 2023</h5>
+                            <p><em>E-Voting System, Surabaya</em></p>
+                            <ul>
+                                <li>Memimpin & mengkoordinasikan tim dalam pengembangan sistem e-voting</li>
+                                <li>Merancang strategi pengembangan dari perencanaan hingga implementasi</li>
+                                <li>Mengembangkan fitur administrasi voters, candidates, dan reporting</li>
+                            </ul>
+                        </div><!-- End Resume Item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Resume Section -->
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <p>Kumpulan proyek-proyek yang telah saya kerjakan, mulai dari sistem e-voting, aplikasi bengkel online,
+                    e-library, hingga e-commerce. Setiap proyek menggunakan teknologi terkini dan best practices dalam
+                    development.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
+                    data-sort="original-order">
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-web">Web App</li>
+                        <li data-filter=".filter-system">System</li>
+                        <li data-filter=".filter-ecommerce">E-Commerce</li>
+                    </ul><!-- End Portfolio Filters -->
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
+                            <div class="portfolio-content h-100">
+                                <img src="assets/img/portfolio/voting2.png" class="img-fluid" alt="E-Voting System">
+                                <div class="portfolio-info">
+                                    <h4>E-Voting System</h4>
+                                    <p>Sistem pemungutan suara elektronik dengan fitur admin panel</p>
+                                    <a href="assets/img/portfolio/voting2.png" title="E-Voting System"
+                                        data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                            class="bi bi-zoom-in"></i></a>
+                                    <a href="#" title="More Details" class="details-link"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                            <div class="portfolio-content h-100">
+                                <img src="assets/img/portfolio/motofix.jpg" class="img-fluid" alt="Moto Fix">
+                                <div class="portfolio-info">
+                                    <h4>Moto Fix - Bengkel Online</h4>
+                                    <p>Platform booking service bengkel dengan payment gateway</p>
+                                    <a href="assets/img/portfolio/motofix.jpg" title="Moto Fix"
+                                        data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                            class="bi bi-zoom-in"></i></a>
+                                    <a href="#" title="More Details" class="details-link"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
+                            <div class="portfolio-content h-100">
+                                <img src="assets/img/portfolio/elibrary.png" class="img-fluid" alt="E-Library">
+                                <div class="portfolio-info">
+                                    <h4>E-Library Bawaslu</h4>
+                                    <p>Sistem perpustakaan digital terintegrasi dengan Owncloud</p>
+                                    <a href="assets/img/portfolio/elibrary.png" title="E-Library"
+                                        data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                            class="bi bi-zoom-in"></i></a>
+                                    <a href="#" title="More Details" class="details-link"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                            <div class="portfolio-content h-100">
+                                <img src="assets/img/portfolio/alena.png" class="img-fluid" alt="Alena Soccer">
+                                <div class="portfolio-info">
+                                    <h4>Alena Soccer</h4>
+                                    <p>Sistem reservasi lapangan futsal dengan QRIS Payment</p>
+                                    <a href="assets/img/portfolio/alena.png" title="Alena Soccer"
+                                        data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                            class="bi bi-zoom-in"></i></a>
+                                    <a href="#" title="More Details" class="details-link"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
+                            <div class="portfolio-content h-100">
+                                <img src="assets/img/portfolio/ecommerce.jpg" class="img-fluid"
+                                    alt="E-Commerce Olahraga">
+                                <div class="portfolio-info">
+                                    <h4>E-Commerce Toko Olahraga</h4>
+                                    <p>Online store dengan integrasi Midtrans & Raja Ongkir</p>
+                                    <a href="assets/img/portfolio/ecommerce.jpg" title="E-Commerce"
+                                        data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                            class="bi bi-zoom-in"></i></a>
+                                    <a href="#" title="More Details" class="details-link"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                    </div><!-- End Portfolio Container -->
+                </div>
+            </div>
+        </section><!-- /Portfolio Section -->
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Services</h2>
+                <p>Layanan pengembangan teknologi yang saya tawarkan, mulai dari konsultasi sistem hingga implementasi
+                    aplikasi web lengkap. Setiap layanan dirancang untuk memberikan solusi terbaik sesuai kebutuhan
+                    klien.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <div class="row gy-4">
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Full Stack Web
+                                    Development</a></h4>
+                            <p class="description">Pengembangan aplikasi web lengkap dari frontend hingga backend
+                                menggunakan teknologi modern seperti Laravel, Vue.js, dan MySQL</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon flex-shrink-0"><i class="bi bi-diagram-3"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">System Analysis & Design</a>
+                            </h4>
+                            <p class="description">Analisis kebutuhan sistem, perancangan database, ERD, UML, dan DFD
+                                untuk memastikan sistem yang efisien dan scalable</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon flex-shrink-0"><i class="bi bi-kanban"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Project Management</a></h4>
+                            <p class="description">Manajemen proyek menggunakan metodologi Agile Scrum dan Waterfall
+                                untuk memastikan proyek selesai tepat waktu dan sesuai budget</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon flex-shrink-0"><i class="bi bi-credit-card"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Payment Gateway
+                                    Integration</a></h4>
+                            <p class="description">Integrasi sistem pembayaran yang aman menggunakan Midtrans, QRIS,
+                                dan berbagai metode pembayaran digital lainnya</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon flex-shrink-0"><i class="bi bi-cart"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">E-Commerce Development</a>
+                            </h4>
+                            <p class="description">Pembuatan toko online lengkap dengan fitur katalog produk, keranjang
+                                belanja, sistem pembayaran, dan manajemen inventory</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon flex-shrink-0"><i class="bi bi-headset"></i></div>
+                        <div>
+                            <h4 class="title"><a href="#" class="stretched-link">Technical Consultation</a>
+                            </h4>
+                            <p class="description">Konsultasi teknis untuk pemilihan teknologi, arsitektur sistem, dan
+                                strategi pengembangan yang paling sesuai dengan kebutuhan bisnis</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                </div>
+            </div>
+        </section><!-- /Services Section -->
+
+
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+                <p>Hubungi saya untuk diskusi proyek, konsultasi teknologi, atau kerjasama pengembangan aplikasi web.
+                    Saya siap membantu mewujudkan ide digital Anda menjadi kenyataan.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-5">
+                        <div class="info-wrap">
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                <div>
+                                    <h3>Address</h3>
+                                    <p>Sidoarjo, Jawa Timur, Indonesia</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                <i class="bi bi-telephone flex-shrink-0"></i>
+                                <div>
+                                    <h3>Call Us</h3>
+                                    <p>
+                                        <a href="https://wa.link/k7ks3m" target="_blank" rel="noopener noreferrer">
+                                            +62 878-4017-7803
+                                        </a>
+                                    </p>
+                                </div>
+
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                                <i class="bi bi-envelope flex-shrink-0"></i>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p>
+                                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rizkyalamsyah.dev@gmail.com"
+                                            target="_blank">
+                                            rizkyalamsyah.dev@gmail.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <iframe
+                                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Sedati%20Gede&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <form id="contact-form" action="https://formspree.io/f/xeorqbqn" method="POST"
+                            class="contact-form" data-aos="fade-up" data-aos-delay="200">
+
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <label for="name-field" class="pb-2">Your Name</label>
+                                    <input type="text" name="name" id="name-field" class="form-control"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email-field" class="pb-2">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email-field"
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="subject-field" class="pb-2">Subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject-field"
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="message-field" class="pb-2">Message</label>
+                                    <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading" style="display: none;">Loading...</div>
+                                    <div class="error-message" style="display: none;"></div>
+                                    <div class="sent-message" style="display: none;">Your message has been sent. Thank
+                                        you!</div>
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Contact Section -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById("contact-form");
+
+                if (form) {
+                    form.addEventListener("submit", async function(event) {
+                        event.preventDefault();
+
+                        const loading = form.querySelector('.loading');
+                        const errorMessage = form.querySelector('.error-message');
+                        const sentMessage = form.querySelector('.sent-message');
+
+                        // Show loading, hide others
+                        loading.style.display = 'block';
+                        errorMessage.style.display = 'none';
+                        sentMessage.style.display = 'none';
+
+                        const data = new FormData(form);
+
+                        try {
+                            const response = await fetch(form.action, {
+                                method: 'POST',
+                                body: data,
+                                headers: {
+                                    'Accept': 'application/json'
+                                }
+                            });
+
+                            loading.style.display = 'none';
+
+                            if (response.ok) {
+                                sentMessage.style.display = 'block';
+                                form.reset();
+                            } else {
+                                const responseData = await response.json();
+                                if (responseData.errors) {
+                                    errorMessage.innerHTML = "Please fix the following errors: " +
+                                        responseData.errors.map(error => error.message).join(", ");
+                                } else {
+                                    errorMessage.innerHTML =
+                                        "Oops! There was a problem submitting your form.";
+                                }
+                                errorMessage.style.display = 'block';
+                            }
+                        } catch (error) {
+                            loading.style.display = 'none';
+                            errorMessage.innerHTML = "Oops! Network error. Please try again.";
+                            errorMessage.style.display = 'block';
+                        }
+                    });
+                }
+            });
+        </script>
+
+
+    </main>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
