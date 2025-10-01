@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Rizky Alamsyah | Web Developer Portfolio</title>
+    <title>Rizky Alamsyah | Web Developer Portfolio</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -53,20 +53,20 @@
             <h1 class="sitename">Rizky Alamsyah</h1>
         </a>
 
-       <!-- Social Links -->
-<div class="social-links text-center mt-2">
-  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-  <a href="#" class="github"><i class="bi bi-github"></i></a>
-</div>
+        <!-- Social Links -->
+        <div class="social-links text-center mt-2">
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="github"><i class="bi bi-github"></i></a>
+        </div>
 
-<!-- Theme Toggle -->
-<div class="theme-switcher text-center mt-3">
-  <button id="theme-toggle" class="theme-toggle btn">
-    <i class="bi bi-moon"></i>
-  </button>
-</div>
+        <!-- Theme Toggle -->
+        <div class="theme-switcher text-center mt-3">
+            <button id="theme-toggle" class="theme-toggle btn">
+                <i class="bi bi-moon"></i>
+            </button>
+        </div>
         <nav id="navmenu" class="navmenu">
-          
+
             <ul>
                 <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
                 <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
@@ -79,611 +79,637 @@
         </nav>
 
     </header>
-<script>
-  const body = document.body;
-  const toggleBtn = document.getElementById('theme-toggle');
-  const currentTheme = localStorage.getItem('theme') || 'dark';
+    <script>
+        const body = document.body;
+        const toggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'dark';
 
-  // init theme
-  if (currentTheme === 'light') {
-    body.classList.remove('dark-background');
-    body.classList.add('light-background');
-    toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
-  } else {
-    body.classList.remove('light-background');
-    body.classList.add('dark-background');
-    toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
-  }
+        // init theme
+        if (currentTheme === 'light') {
+            body.classList.remove('dark-background');
+            body.classList.add('light-background');
+            toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+        } else {
+            body.classList.remove('light-background');
+            body.classList.add('dark-background');
+            toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+        }
 
-  // toggle on click
-  toggleBtn.addEventListener('click', () => {
-    if (body.classList.contains('dark-background')) {
-      body.classList.remove('dark-background');
-      body.classList.add('light-background');
-      localStorage.setItem('theme', 'light');
-      toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
-    } else {
-      body.classList.remove('light-background');
-      body.classList.add('dark-background');
-      localStorage.setItem('theme', 'dark');
-      toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
-    }
-  });
-</script>
+        // toggle on click
+        toggleBtn.addEventListener('click', () => {
+            if (body.classList.contains('dark-background')) {
+                body.classList.remove('dark-background');
+                body.classList.add('light-background');
+                localStorage.setItem('theme', 'light');
+                toggleBtn.innerHTML = '<i class="bi bi-moon"></i>';
+            } else {
+                body.classList.remove('light-background');
+                body.classList.add('dark-background');
+                localStorage.setItem('theme', 'dark');
+                toggleBtn.innerHTML = '<i class="bi bi-sun"></i>';
+            }
+        });
+    </script>
 
     <main class="main">
 
-<!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
 
-  <img src="assets/img/35e0d369-e78c-42ed-987e-98bb444f88f5.png" alt="" data-aos="fade-in" class="">
+            <img src="assets/img/35e0d369-e78c-42ed-987e-98bb444f88f5.png" alt="" data-aos="fade-in"
+                class="">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <h2>Rizky Alamsyah</h2>
-    <p>
-      I'm <span class="typed"
-        data-typed-items="Full Stack Web Developer, System Analyst, Project Manager">Full Stack Web Dev</span>
-      <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
-    </p>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <h2>Rizky Alamsyah</h2>
+                <p>
+                    I'm <span class="typed"
+                        data-typed-items="Full Stack Web Developer, System Analyst, Project Manager">Full Stack Web
+                        Dev</span>
+                    <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+                </p>
 
-    <!-- Ganti tombol download yang sudah ada dengan ini -->
-<a href="#" class="btn-download-cv" id="download-cv-btn">
-    <i class="bi bi-download"></i>
-    <span class="btn-text">Download CV</span>
-</a>
+                <!-- Ganti tombol download yang sudah ada dengan ini -->
+                <a href="#" class="btn-download-cv" id="download-cv-btn">
+                    <i class="bi bi-download"></i>
+                    <span class="btn-text">Download CV</span>
+                </a>
 
-<!-- Tambahkan setelah tombol Download CV yang sudah ada -->
+                <!-- Tambahkan setelah tombol Download CV yang sudah ada -->
 
-<!-- Toast Notification -->
-<div class="toast-container">
-    <div id="download-toast" class="toast">
-        <div class="toast-icon">
-            <i class="bi bi-check-circle-fill"></i>
-        </div>
-        <div class="toast-content">
-            <div class="toast-title">Download Berhasil!</div>
-            <div class="toast-message">CV telah didownload ke perangkat Anda</div>
-        </div>
-        <button class="toast-close" onclick="closeToast()">
-            <i class="bi bi-x"></i>
-        </button>
-    </div>
-</div>
+                <!-- Toast Notification -->
+                <div class="toast-container">
+                    <div id="download-toast" class="toast">
+                        <div class="toast-icon">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <div class="toast-content">
+                            <div class="toast-title">Download Berhasil!</div>
+                            <div class="toast-message">CV telah didownload ke perangkat Anda</div>
+                        </div>
+                        <button class="toast-close" onclick="closeToast()">
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </div>
+                </div>
 
-<!-- Progress Bar -->
-<div id="download-progress" class="progress-container">
-    <div class="progress-bar">
-        <div class="progress-fill"></div>
-    </div>
-    <div class="progress-text">Downloading... <span id="progress-percent">0%</span></div>
-</div>
+                <!-- Progress Bar -->
+                <div id="download-progress" class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">Downloading... <span id="progress-percent">0%</span></div>
+                </div>
 
-<style>
-/* Tambahkan CSS ini ke bagian style yang sudah ada */
+                <style>
+                    /* Tambahkan CSS ini ke bagian style yang sudah ada */
 
-/* Loading state untuk tombol */
-.btn-download-cv.loading {
-    pointer-events: none;
-    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
-    transform: none;
-}
+                    /* Loading state untuk tombol */
+                    .btn-download-cv.loading {
+                        pointer-events: none;
+                        background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+                        transform: none;
+                    }
 
-.btn-download-cv.loading .btn-text {
-    opacity: 0.5;
-}
+                    .btn-download-cv.loading .btn-text {
+                        opacity: 0.5;
+                    }
 
-.btn-download-cv.loading i {
-    animation: spin 1s linear infinite;
-}
+                    .btn-download-cv.loading i {
+                        animation: spin 1s linear infinite;
+                    }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+                    @keyframes spin {
+                        0% {
+                            transform: rotate(0deg);
+                        }
 
-/* Success state */
-.btn-download-cv.success {
-    background: linear-gradient(135deg, #27ae60, #229954);
-    animation: successPulse 0.6s ease;
-}
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
 
-@keyframes successPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
+                    /* Success state */
+                    .btn-download-cv.success {
+                        background: linear-gradient(135deg, #27ae60, #229954);
+                        animation: successPulse 0.6s ease;
+                    }
 
-/* Toast Notification */
-.toast-container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
-}
+                    @keyframes successPulse {
+                        0% {
+                            transform: scale(1);
+                        }
 
-.toast {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    border-left: 4px solid #27ae60;
-    color: white;
-    padding: 16px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    min-width: 320px;
-    transform: translateX(400px);
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+                        50% {
+                            transform: scale(1.05);
+                        }
 
-.toast.show {
-    transform: translateX(0);
-    opacity: 1;
-}
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
 
-.toast-icon {
-    margin-right: 12px;
-    font-size: 24px;
-    color: #27ae60;
-}
+                    /* Toast Notification */
+                    .toast-container {
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        z-index: 9999;
+                    }
 
-.toast-content {
-    flex: 1;
-}
+                    .toast {
+                        display: flex;
+                        align-items: center;
+                        background: linear-gradient(135deg, #2c3e50, #34495e);
+                        border-left: 4px solid #27ae60;
+                        color: white;
+                        padding: 16px 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                        min-width: 320px;
+                        transform: translateX(400px);
+                        opacity: 0;
+                        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    }
 
-.toast-title {
-    font-weight: 600;
-    margin-bottom: 2px;
-    font-size: 14px;
-}
+                    .toast.show {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
 
-.toast-message {
-    font-size: 12px;
-    opacity: 0.8;
-}
+                    .toast-icon {
+                        margin-right: 12px;
+                        font-size: 24px;
+                        color: #27ae60;
+                    }
 
-.toast-close {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 4px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
+                    .toast-content {
+                        flex: 1;
+                    }
 
-.toast-close:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
+                    .toast-title {
+                        font-weight: 600;
+                        margin-bottom: 2px;
+                        font-size: 14px;
+                    }
 
-/* Progress Bar */
-.progress-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.9);
-    padding: 30px;
-    border-radius: 12px;
-    min-width: 300px;
-    text-align: center;
-    display: none;
-    z-index: 10000;
-}
+                    .toast-message {
+                        font-size: 12px;
+                        opacity: 0.8;
+                    }
 
-.progress-bar {
-    width: 100%;
-    height: 8px;
-    background: #34495e;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 12px;
-}
+                    .toast-close {
+                        background: none;
+                        border: none;
+                        color: white;
+                        cursor: pointer;
+                        padding: 4px;
+                        border-radius: 4px;
+                        transition: background-color 0.2s;
+                    }
 
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #3498db, #2980b9);
-    width: 0%;
-    transition: width 0.3s ease;
-    border-radius: 4px;
-}
+                    .toast-close:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
 
-.progress-text {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-}
+                    /* Progress Bar */
+                    .progress-container {
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: rgba(0, 0, 0, 0.9);
+                        padding: 30px;
+                        border-radius: 12px;
+                        min-width: 300px;
+                        text-align: center;
+                        display: none;
+                        z-index: 10000;
+                    }
 
-/* Responsive untuk toast dan progress */
-@media (max-width: 768px) {
-    .toast {
-        min-width: 280px;
-        margin-right: 10px;
-    }
-    
-    .progress-container {
-        margin: 0 20px;
-        min-width: 250px;
-    }
-}
+                    .progress-bar {
+                        width: 100%;
+                        height: 8px;
+                        background: #34495e;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        margin-bottom: 12px;
+                    }
 
-@media (max-width: 480px) {
-    .toast-container {
-        top: 10px;
-        right: 10px;
-        left: 10px;
-    }
-    
-    .toast {
-        min-width: auto;
-        margin-right: 0;
-    }
-    
-    .progress-container {
-        margin: 0 10px;
-        min-width: 200px;
-    }
-}
-</style>
+                    .progress-fill {
+                        height: 100%;
+                        background: linear-gradient(90deg, #3498db, #2980b9);
+                        width: 0%;
+                        transition: width 0.3s ease;
+                        border-radius: 4px;
+                    }
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Pastikan DOM sudah loaded
-    const downloadBtn = document.querySelector('.btn-download-cv');
-    
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Jangan lakukan apa-apa jika sedang loading
-            if (this.classList.contains('loading')) return;
-            
-            // Mulai animasi loading
-            startDownload();
-            
-            // Simulasi proses download
-            simulateDownload();
-        });
-    }
-});
+                    .progress-text {
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
 
-function startDownload() {
-    const btn = document.querySelector('.btn-download-cv');
-    const progressContainer = document.getElementById('download-progress');
-    
-    // Tambah class loading ke tombol
-    btn.classList.add('loading');
-    
-    // Tampilkan progress bar
-    progressContainer.style.display = 'block';
-    
-    // Reset progress
-    updateProgress(0);
-}
+                    /* Responsive untuk toast dan progress */
+                    @media (max-width: 768px) {
+                        .toast {
+                            min-width: 280px;
+                            margin-right: 10px;
+                        }
 
-function simulateDownload() {
-    const progressFill = document.querySelector('.progress-fill');
-    const progressPercent = document.getElementById('progress-percent');
-    let progress = 0;
-    
-    const interval = setInterval(() => {
-        progress += Math.random() * 15 + 5; // Random increment 5-20%
-        
-        if (progress >= 100) {
-            progress = 100;
-            clearInterval(interval);
-            completeDownload();
-        }
-        
-        updateProgress(progress);
-    }, 200);
-}
+                        .progress-container {
+                            margin: 0 20px;
+                            min-width: 250px;
+                        }
+                    }
 
-function updateProgress(progress) {
-    const progressFill = document.querySelector('.progress-fill');
-    const progressPercent = document.getElementById('progress-percent');
-    
-    if (progressFill && progressPercent) {
-        progressFill.style.width = progress + '%';
-        progressPercent.textContent = Math.round(progress) + '%';
-    }
-}
+                    @media (max-width: 480px) {
+                        .toast-container {
+                            top: 10px;
+                            right: 10px;
+                            left: 10px;
+                        }
 
-function completeDownload() {
-    const btn = document.querySelector('.btn-download-cv');
-    const progressContainer = document.getElementById('download-progress');
-    
-    setTimeout(() => {
-        // Sembunyikan progress bar
-        progressContainer.style.display = 'none';
-        
-        // Hapus loading state dan tambah success state
-        btn.classList.remove('loading');
-        btn.classList.add('success');
-        
-        // Mulai download file sebenarnya
-        const link = document.createElement('a');
-        link.href = 'assets/cv-rizky-alamsyah.pdf'; // Sesuaikan dengan path file CV Anda
-        link.download = 'CV-Rizky-Alamsyah.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        
-        // Tampilkan notifikasi sukses
-        showToast();
-        
-        // Reset tombol setelah 2 detik
-        setTimeout(() => {
-            btn.classList.remove('success');
-        }, 2000);
-        
-    }, 500);
-}
+                        .toast {
+                            min-width: auto;
+                            margin-right: 0;
+                        }
 
-function showToast() {
-    const toast = document.getElementById('download-toast');
-    
-    if (toast) {
-        toast.classList.add('show');
-        
-        // Auto hide setelah 4 detik
-        setTimeout(() => {
-            hideToast();
-        }, 4000);
-    }
-}
+                        .progress-container {
+                            margin: 0 10px;
+                            min-width: 200px;
+                        }
+                    }
+                </style>
 
-function hideToast() {
-    const toast = document.getElementById('download-toast');
-    if (toast) {
-        toast.classList.remove('show');
-    }
-}
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Pastikan DOM sudah loaded
+                        const downloadBtn = document.querySelector('.btn-download-cv');
 
-function closeToast() {
-    hideToast();
-}
-</script>
-  </div>
+                        if (downloadBtn) {
+                            downloadBtn.addEventListener('click', function(e) {
+                                e.preventDefault();
 
-</section><!-- /Hero Section -->
+                                // Jangan lakukan apa-apa jika sedang loading
+                                if (this.classList.contains('loading')) return;
 
-<style>
-/* Download CV Button Styles */
-.btn-download-cv {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, #3498db, #2980b9);
-    color: #ffffff;
-    padding: 14px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 50px;
-    transition: all 0.4s ease;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+                                // Mulai animasi loading
+                                startDownload();
 
-.btn-download-cv:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-}
+                                // Simulasi proses download
+                                simulateDownload();
+                            });
+                        }
+                    });
 
-.btn-download-cv:hover:before {
-    left: 100%;
-}
+                    function startDownload() {
+                        const btn = document.querySelector('.btn-download-cv');
+                        const progressContainer = document.getElementById('download-progress');
 
-.btn-download-cv:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
-    background: linear-gradient(135deg, #2980b9, #3498db);
-    color: #ffffff;
-    text-decoration: none;
-}
+                        // Tambah class loading ke tombol
+                        btn.classList.add('loading');
 
-.btn-download-cv:active {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-}
+                        // Tampilkan progress bar
+                        progressContainer.style.display = 'block';
 
-.btn-download-cv i {
-    font-size: 18px;
-    transition: transform 0.3s ease;
-}
+                        // Reset progress
+                        updateProgress(0);
+                    }
 
-.btn-download-cv:hover i {
-    transform: translateY(2px);
-    animation: bounce 0.6s ease;
-}
+                    function simulateDownload() {
+                        const progressFill = document.querySelector('.progress-fill');
+                        const progressPercent = document.getElementById('progress-percent');
+                        let progress = 0;
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-3px);
-    }
-    60% {
-        transform: translateY(-2px);
-    }
-}
+                        const interval = setInterval(() => {
+                            progress += Math.random() * 15 + 5; // Random increment 5-20%
 
-/* Alternative Styles */
+                            if (progress >= 100) {
+                                progress = 100;
+                                clearInterval(interval);
+                                completeDownload();
+                            }
 
-/* Style 2: Outline Button */
-.btn-download-cv-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: transparent;
-    color: #3498db;
-    padding: 14px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 2px solid #3498db;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+                            updateProgress(progress);
+                        }, 200);
+                    }
 
-.btn-download-cv-outline:hover {
-    background: #3498db;
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-    text-decoration: none;
-}
+                    function updateProgress(progress) {
+                        const progressFill = document.querySelector('.progress-fill');
+                        const progressPercent = document.getElementById('progress-percent');
 
-/* Style 3: Glassmorphism */
-.btn-download-cv-glass {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    padding: 14px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+                        if (progressFill && progressPercent) {
+                            progressFill.style.width = progress + '%';
+                            progressPercent.textContent = Math.round(progress) + '%';
+                        }
+                    }
 
-.btn-download-cv-glass:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    color: #ffffff;
-    text-decoration: none;
-}
+                    function completeDownload() {
+                        const btn = document.querySelector('.btn-download-cv');
+                        const progressContainer = document.getElementById('download-progress');
 
-/* Style 4: Neumorphism */
-.btn-download-cv-neuro {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #2c2c2c;
-    color: #ffffff;
-    padding: 16px 32px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    cursor: pointer;
-    box-shadow: 
-        8px 8px 16px rgba(0, 0, 0, 0.3),
-        -8px -8px 16px rgba(255, 255, 255, 0.05);
-}
+                        setTimeout(() => {
+                            // Sembunyikan progress bar
+                            progressContainer.style.display = 'none';
 
-.btn-download-cv-neuro:hover {
-    box-shadow: 
-        4px 4px 8px rgba(0, 0, 0, 0.3),
-        -4px -4px 8px rgba(255, 255, 255, 0.05),
-        inset 2px 2px 4px rgba(0, 0, 0, 0.2);
-    color: #3498db;
-    text-decoration: none;
-}
+                            // Hapus loading state dan tambah success state
+                            btn.classList.remove('loading');
+                            btn.classList.add('success');
 
-/* Style 5: Animated Gradient */
-.btn-download-cv-gradient {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(-45deg, #3498db, #2980b9, #1abc9c, #16a085);
-    background-size: 400% 400%;
-    animation: gradientShift 3s ease infinite;
-    color: #ffffff;
-    padding: 14px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-}
+                            // Mulai download file sebenarnya
+                            const link = document.createElement('a');
+                            link.href = 'assets/cv-rizky-alamsyah.pdf'; // Sesuaikan dengan path file CV Anda
+                            link.download = 'CV-Rizky-Alamsyah.pdf';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
 
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+                            // Tampilkan notifikasi sukses
+                            showToast();
 
-.btn-download-cv-gradient:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-    color: #ffffff;
-    text-decoration: none;
-}
+                            // Reset tombol setelah 2 detik
+                            setTimeout(() => {
+                                btn.classList.remove('success');
+                            }, 2000);
 
-/* Responsive */
-@media (max-width: 768px) {
-    .btn-download-cv,
-    .btn-download-cv-outline,
-    .btn-download-cv-glass,
-    .btn-download-cv-neuro,
-    .btn-download-cv-gradient {
-        padding: 12px 25px;
-        font-size: 14px;
-        gap: 8px;
-    }
-    
-    .btn-download-cv i {
-        font-size: 16px;
-    }
-}
+                        }, 500);
+                    }
 
-@media (max-width: 480px) {
-    .btn-download-cv,
-    .btn-download-cv-outline,
-    .btn-download-cv-glass,
-    .btn-download-cv-neuro,
-    .btn-download-cv-gradient {
-        width: 100%;
-        justify-content: center;
-        padding: 14px 20px;
-    }
-}
-</style>
+                    function showToast() {
+                        const toast = document.getElementById('download-toast');
+
+                        if (toast) {
+                            toast.classList.add('show');
+
+                            // Auto hide setelah 4 detik
+                            setTimeout(() => {
+                                hideToast();
+                            }, 4000);
+                        }
+                    }
+
+                    function hideToast() {
+                        const toast = document.getElementById('download-toast');
+                        if (toast) {
+                            toast.classList.remove('show');
+                        }
+                    }
+
+                    function closeToast() {
+                        hideToast();
+                    }
+                </script>
+            </div>
+
+        </section><!-- /Hero Section -->
+
+        <style>
+            /* Download CV Button Styles */
+            .btn-download-cv {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: linear-gradient(135deg, #3498db, #2980b9);
+                color: #ffffff;
+                padding: 14px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                text-decoration: none;
+                border: none;
+                border-radius: 50px;
+                transition: all 0.4s ease;
+                box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+                position: relative;
+                overflow: hidden;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+            .btn-download-cv:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                transition: left 0.5s;
+            }
+
+            .btn-download-cv:hover:before {
+                left: 100%;
+            }
+
+            .btn-download-cv:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+                background: linear-gradient(135deg, #2980b9, #3498db);
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .btn-download-cv:active {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            }
+
+            .btn-download-cv i {
+                font-size: 18px;
+                transition: transform 0.3s ease;
+            }
+
+            .btn-download-cv:hover i {
+                transform: translateY(2px);
+                animation: bounce 0.6s ease;
+            }
+
+            @keyframes bounce {
+
+                0%,
+                20%,
+                50%,
+                80%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                40% {
+                    transform: translateY(-3px);
+                }
+
+                60% {
+                    transform: translateY(-2px);
+                }
+            }
+
+            /* Alternative Styles */
+
+            /* Style 2: Outline Button */
+            .btn-download-cv-outline {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: transparent;
+                color: #3498db;
+                padding: 14px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                text-decoration: none;
+                border: 2px solid #3498db;
+                border-radius: 50px;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+            .btn-download-cv-outline:hover {
+                background: #3498db;
+                color: #ffffff;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+                text-decoration: none;
+            }
+
+            /* Style 3: Glassmorphism */
+            .btn-download-cv-glass {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: #ffffff;
+                padding: 14px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                text-decoration: none;
+                border-radius: 15px;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+            .btn-download-cv-glass:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            /* Style 4: Neumorphism */
+            .btn-download-cv-neuro {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: #2c2c2c;
+                color: #ffffff;
+                padding: 16px 32px;
+                font-size: 16px;
+                font-weight: 600;
+                text-decoration: none;
+                border: none;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                cursor: pointer;
+                box-shadow:
+                    8px 8px 16px rgba(0, 0, 0, 0.3),
+                    -8px -8px 16px rgba(255, 255, 255, 0.05);
+            }
+
+            .btn-download-cv-neuro:hover {
+                box-shadow:
+                    4px 4px 8px rgba(0, 0, 0, 0.3),
+                    -4px -4px 8px rgba(255, 255, 255, 0.05),
+                    inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+                color: #3498db;
+                text-decoration: none;
+            }
+
+            /* Style 5: Animated Gradient */
+            .btn-download-cv-gradient {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: linear-gradient(-45deg, #3498db, #2980b9, #1abc9c, #16a085);
+                background-size: 400% 400%;
+                animation: gradientShift 3s ease infinite;
+                color: #ffffff;
+                padding: 14px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                text-decoration: none;
+                border: none;
+                border-radius: 50px;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                cursor: pointer;
+                box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            }
+
+            @keyframes gradientShift {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .btn-download-cv-gradient:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+
+                .btn-download-cv,
+                .btn-download-cv-outline,
+                .btn-download-cv-glass,
+                .btn-download-cv-neuro,
+                .btn-download-cv-gradient {
+                    padding: 12px 25px;
+                    font-size: 14px;
+                    gap: 8px;
+                }
+
+                .btn-download-cv i {
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 480px) {
+
+                .btn-download-cv,
+                .btn-download-cv-outline,
+                .btn-download-cv-glass,
+                .btn-download-cv-neuro,
+                .btn-download-cv-gradient {
+                    width: 100%;
+                    justify-content: center;
+                    padding: 14px 20px;
+                }
+            }
+        </style>
 
         <!-- About Section -->
         <section id="about" class="about section">
@@ -789,7 +815,7 @@ function closeToast() {
             </div>
         </section><!-- /Stats Section -->
         <!-- Skills Section -->
-<section id="skills" class="skills section">
+        <section id="skills" class="skills section">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Skills</h2>
@@ -883,7 +909,16 @@ function closeToast() {
                             </div>
                             <div class="skill-name">PHP</div>
                         </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Go-Logo_Blue.png" alt="Golang">
+                            </div>
+                            <div class="skill-name">Golang</div>
+                        </div>
                     </div>
+
+
                 </div>
 
                 <!-- Database Tab -->
@@ -908,6 +943,20 @@ function closeToast() {
                 <!-- Tools Tab -->
                 <div class="tab-content" id="tools">
                     <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Visual Studio Code (VS Code).png" alt="VSCode">
+                            </div>
+                            <div class="skill-name">Visual Studio Code</div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/img/skills/Redis.png" alt="Redis">
+                            </div>
+                            <div class="skill-name">Redis</div>
+                        </div>
+
                         <div class="skill-card">
                             <div class="skill-icon">
                                 <img src="assets/img/skills/Git.png" alt="Git">
@@ -1351,7 +1400,7 @@ function closeToast() {
         </section><!-- /Services Section -->
 
 
-        
+
         <!-- Contact Section -->
         <section id="contact" class="contact section">
             <!-- Section Title -->
